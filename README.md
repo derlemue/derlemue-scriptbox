@@ -1,2 +1,43 @@
 # derlemue-scriptbox
-dlm-scriptbox
+```
+/////////////////////////////////////////////////////////////////////////////////////
+//
+//  derlemue-scriptbox - varios useful scripts for public use (feedback welcomed ;-)
+//  --------------------------------------------------------------------------------
+//  |- /folder 
+//  |- |- script
+//  |- |- description
+//
+/////////////////////////////////////////////////////////////////////////////////////
+//
+//	repository folder and files tree:
+//
+//	derlemue/derlemue-scriptbox
+//	|-- .gitignore
+//	|-- LICENSE
+//	|-- README.md
+//  |- /folder
+//  |- |- script
+//
+/////////////////////////////////////////////////////////////////////////////////////
+//
+//	folder and file descriptions:
+//
+//	/.gitignore
+//	 | Info:
+//	 |	contains files to be ignored by git push
+//
+//	/LICENSE
+//	 | Info:
+//	 |	contains infos about script's licensing
+//
+//	/README.md
+//	 | Info:
+//	 |	contains project description (your are here)
+//
+/////////////////////////////////////////////////////////////////////////////////////
+//
+//	by T. Ledermueller (derlemue.com) | License: GNU GPL-3.0
+//
+/////////////////////////////////////////////////////////////////////////////////////
+```
