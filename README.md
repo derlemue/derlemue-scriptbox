@@ -16,8 +16,16 @@
 //  |-- .gitignore
 //  |-- LICENSE
 //  |-- README.md
+//  |
 //  |- /folder
 //  |- |- script
+//  |
+//  |- /derlemue/UtilApp-UtilOnCall
+//	|- |- .gitignore
+//	|- |- LICENSE
+//	|- |- README.md
+//	|- |- send_email.gs
+//	|- |- email_text.html
 //
 /////////////////////////////////////////////////////////////////////////////////////
 //
