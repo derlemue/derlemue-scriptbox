@@ -10,9 +10,9 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////
 //
-//	repository folder and files tree:
+//  repository folder and files tree:
 //
-//	derlemue/derlemue-scriptbox
+//  derlemue/derlemue-scriptbox
 //	|-- .gitignore
 //	|-- LICENSE
 //	|-- README.md
