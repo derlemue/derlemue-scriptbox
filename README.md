@@ -2,7 +2,7 @@
 ```
 /////////////////////////////////////////////////////////////////////////////////////
 //
-//  derlemue-scriptbox - varios useful scripts for public use (feedback welcomed ;-)
+//  derlemue-scriptbox - various useful scripts for public use (feedback welcomed ;-)
 //  --------------------------------------------------------------------------------
 //  |- /folder 
 //  |- |- script
