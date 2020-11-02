@@ -13,9 +13,9 @@
 //  repository folder and files tree:
 //
 //  derlemue/derlemue-scriptbox
-//	|-- .gitignore
-//	|-- LICENSE
-//	|-- README.md
+//  |-- .gitignore
+//  |-- LICENSE
+//  |-- README.md
 //  |- /folder
 //  |- |- script
 //
