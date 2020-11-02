@@ -4,9 +4,9 @@
 //
 //  derlemue-scriptbox - various useful scripts for public use (feedback welcomed ;-)
 //  ---------------------------------------------------------------------------------
+//  /derlemue/derlemue-scriptbox
+//  |- /derlemue/UtilApp-UtilOnCall
 //  |- /folder 
-//  |- |- script
-//  |- |- description
 //
 /////////////////////////////////////////////////////////////////////////////////////
 //
@@ -16,16 +16,14 @@
 //  |-- .gitignore
 //  |-- LICENSE
 //  |-- README.md
-//  |
+//  |- /derlemue/UtilApp-UtilOnCall
+//  |- |- .gitignore
+//  |- |- LICENSE
+//  |- |- README.md
+//  |- |- send_email.gs
+//  |- |- email_text.html
 //  |- /folder
 //  |- |- script
-//  |
-//  |- /derlemue/UtilApp-UtilOnCall
-//	|- |- .gitignore
-//	|- |- LICENSE
-//	|- |- README.md
-//	|- |- send_email.gs
-//	|- |- email_text.html
 //
 /////////////////////////////////////////////////////////////////////////////////////
 //
