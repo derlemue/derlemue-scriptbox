@@ -21,19 +21,19 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////
 //
-//	folder and file descriptions:
+//  folder and file descriptions:
 //
-//	/.gitignore
-//	 | Info:
-//	 |	contains files to be ignored by git push
+//  /.gitignore
+//   | Info:
+//   |	contains files to be ignored by git push
 //
-//	/LICENSE
-//	 | Info:
-//	 |	contains infos about script's licensing
+//  /LICENSE
+//   | Info:
+//   |	contains infos about script's licensing
 //
-//	/README.md
-//	 | Info:
-//	 |	contains project description (your are here)
+//  /README.md
+//   | Info:
+//   |	contains project description (your are here)
 //
 /////////////////////////////////////////////////////////////////////////////////////
 //
