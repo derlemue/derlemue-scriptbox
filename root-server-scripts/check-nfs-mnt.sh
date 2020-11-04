@@ -10,7 +10,7 @@ HOST=server.domain.com        ## change domain
 PORT=2049
 PNAME=nfs
 MNTPNT=/mnt/share             ## change mnt point          
-NFSSHARE=/volume1/share     ## change nfs share
+NFSSHARE=/volume1/share       ## change nfs share
 
 clear
 echo "checking if port $PORT ($PNAME) is available at host $HOST"
