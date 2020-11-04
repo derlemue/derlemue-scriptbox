@@ -1,0 +1,26 @@
+###############################################
+## cronjob examples      v1.0 | GNU GPL 3.0  ##
+## contact:    admin@derlemue.com            ##
+##             https://discord.gg/rWpXfXHuf8 ##
+###############################################
+## set environment for cronjobs
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+## at reboot
+#@reboot /home/USER/SCRIPTNAME.sh             ## not active
+@reboot /home/USER/SCRIPTNAME.sh              ## at reboot
+
+## parameters are:
+## minute hour day_of_month month day_of_week command
+## * * * * * command
+
+## timed execute
+* * * * * /home/USER/SCRIPTNAME.sh            ## every minute
+0 10 * * * /home/USER/SCRIPTNAME.sh           ## at 10:00 AM
+0 10 * * 1 /home/USER/SCRIPTNAME.sh           ## at 10:00 AM, only on Monday
+0 10 1 * * /home/USER/SCRIPTNAME.sh           ## at 10:00 AM, on day 1 of the month
+0 0 0/1 1/1 * /home/USER/SCRIPTNAME.sh        ## at 12:00 AM, starting on day 0 of the month
+0 0 12 1/1 * /home/USER/SCRIPTNAME.sh         ## at 12:00 AM, on day 12 of the month
+
+## calc your own cron on: https://crontab.cronhub.io/
