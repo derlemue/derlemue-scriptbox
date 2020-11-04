@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////////////////////////***
 //
-// UtilApp-UtilOnCall | send_email.gs | RC_
+// UtilApp-UtilOnCall | send_email.gs | RC1
 //
 /////////////////////////////////////////////////////////////////////***
 //
@@ -19,7 +19,6 @@
 		Logger.log("[METHOD] onFormSubmit");
 		emailSenderBR();
 	}
-
 ///
 ///	Script to parse Email from Sheet and send by alias
 ///
@@ -78,13 +77,13 @@
 
 /// Parse Emails from Google Sheet  
 /// get Email address and name from Google Sheet "Mailaddress", repeat for each row)
-		data_mail.forEach(function(row){  
+		data_mail.forEach(function get1(row){  
 			var vAdd = row[vAddr];
 			var vNameTemp = row[vName];
 			Logger.log(vAdd);
     
 /// get variables for Email body from Google Sheet "Input" (last row) and send to Email draft (email_text.html)
-			data_input.forEach(function(row){
+			data_input.forEach(function get2(row){
 				email_draft.vReporter = row[vReporter];
 				email_draft.vCase = row[vCase];
 				email_draft.vDate = Utilities.formatDate(vDate, "Europe/Berlin", "dd.MM.yyyy");
@@ -107,12 +106,8 @@
 				var vBuildingTemp = row[vBuilding]
 				Logger.log(vBody);
 				var vSub = "Einsatz im Gebäude: " + vBuildingTemp + " | Verteiler: " + vInfoSpreadTemp
-				var vBody = email_draft.evaluate().getContent();
-				GmailApp.sendEmail(vAdd, vSub, "HTML seems to be unsupported by your Email", {
-					name: 'WebApp Rufbereitschaft',
-					htmlBody: vBody,
-					from: '///ADD ALIAS HERE///'
-				})
+                		var vBody = email_draft.evaluate().getContent();
+             			GmailApp.sendEmail(vAdd, vSub, 'HTML seems to be unsupported by your Email', {htmlBody: vBody})
 			})
 		})
 	};
