@@ -22,8 +22,8 @@
 //  |- |- README.md
 //  |- |- send_email.gs
 //  |- |- email_text.html
-//  |- /folder
-//  |- |- script
+//  |- /root-server-scripts
+//  |- |- cert-update.sh
 //
 /////////////////////////////////////////////////////////////////////////////////////
 //
