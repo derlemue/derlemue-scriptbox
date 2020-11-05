@@ -34,7 +34,7 @@ if nc -z $HOST $PORT 2>/dev/null; then
         rm -rf $MNTPNT/*
         echo "cleanup successfull ✓"
         echo "remounting NFS mount.."
-        mount -t nfs $HOST:$NFSSHARE $MNTPNT
+        mount -t nfs $HOST:"$NFSSHARE" $MNTPNT
         sleep 1
         echo "script finished  ✓"
         sleep 5
@@ -51,7 +51,7 @@ else
         rm -rf $MNTPNT/*
         echo "cleanup successfull ✓"
         echo "remounting NFS mount.."
-        mount -t nfs $HOST:$NFSSHARE $MNTPNT
+        mount -t nfs $HOST:"$NFSSHARE" $MNTPNT
         sleep 1
         echo "script finished  ✓"
         sleep 5
@@ -63,7 +63,7 @@ else
         rm -rf $MNTPNT/*
         echo "cleanup successfull ✓"
         echo "remounting NFS mount.."
-        mount -t nfs $HOST:$NFSSHARE $MNTPNT
+        mount -t nfs $HOST:"$NFSSHARE" $MNTPNT
         sleep 1
         echo "script finished  ✓"
         sleep 5
