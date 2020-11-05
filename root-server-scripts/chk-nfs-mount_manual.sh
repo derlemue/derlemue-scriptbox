@@ -9,7 +9,7 @@
 TIME=30
 
 #start loop starting 
-while true; do sh /root/pingmnt.sh
+while true; do sh /path/to/script/pingmnt.sh
 echo ""
 echo "Press Ctrl-C to cancel"
 echo ""
