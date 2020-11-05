@@ -24,7 +24,9 @@
 //  |- |- email_text.html
 //  |- /root-server-scripts
 //  |- |- cert-update.sh
-//  |- |- check-nfs-mount.sh
+//  |- |- chk-nfs-mount.sh
+//  |- |- chk-nfs-mount_manual.sh
+//  |- |- chk-nfs-mount_multi.sh
 //  |- |- crontab-examples.txt
 //
 /////////////////////////////////////////////////////////////////////////////////////
