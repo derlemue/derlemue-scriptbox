@@ -60,7 +60,7 @@ if nc -z $HOST $PORT 2>/dev/null; then
 else
     echo "$HOST status: ✗ (offline)"
     if (grep -qs $MNTPNT1 /proc/mounts && grep -qs $MNTPNT2 /proc/mounts && grep -qs $MNTPNT3 /proc/mounts ); then
-        echo "mountpoint $MNTPNT, $MNTPNT2 or $MNTPNT3 is not mounted: ✗"
+        echo "mountpoint $MNTPNT1, $MNTPNT2 or $MNTPNT3 is not mounted: ✗"
         echo "Trying to fix.."
 #        echo "stopping service.."
 #        cd /home/user/service
@@ -85,7 +85,7 @@ else
         echo "script finished  ✓"
         sleep 5
     else
-        echo "mountpoint $MNTPNT, $MNTPNT2 or $MNTPNT3 is not mounted: ✗"
+        echo "mountpoint $MNTPNT1, $MNTPNT2 or $MNTPNT3 is not mounted: ✗"
         echo "Trying to fix.."
 #        echo "stopping service.."
 #        cd /home/user/service
