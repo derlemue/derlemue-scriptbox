@@ -28,7 +28,7 @@ if nc -z $HOST $PORT 2>/dev/null; then
         echo "Trying to fix.."
         echo "initalising remount.."
         echo "umounting existing NFS mounts.."
-        umount -f -l $MNTPNT
+        umount -f $MNTPNT
         echo "NFS mounts down ✓"
         echo "cleanup mount point.."
         rm -rf $MNTPNT/*
@@ -45,7 +45,7 @@ else
         echo "mountpoint $MNTPNT is not mounted ✗"
         echo "Trying to fix.."
         echo "umounting existing NFS mounts.."
-        umount -f -l $MNTPNT
+        umount -f $MNTPNT
         echo "NFS mounts down.. ✓"
         echo "cleanup mount point.."
         rm -rf $MNTPNT/*
