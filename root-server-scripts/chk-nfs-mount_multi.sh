@@ -25,14 +25,17 @@ if nc -z $HOST $PORT 2>/dev/null; then
     echo "initalising mount check.."
     if (grep -qs $MNTPNT1 /proc/mounts && grep -qs $MNTPNT2 /proc/mounts && grep -qs $MNTPNT3 /proc/mounts ); then
         echo "mountpoint $MNTPNT1, $MNTPNT2 and $MNTPNT3 are mounted: ✓"
+#        echo "starting service.."
+#        cd /home/user/service
+#        command -option 
         echo "script finished  ✓"
         sleep 5
     else
         echo "mountpoint $MNTPNT1, $MNTPNT2 or $MNTPNT3 is not mounted: ✗"
         echo "Trying to fix.."
-        echo "stopping service"
-        cd /home/emby/
-        docker-compose down
+#        echo "stopping service.."
+#        cd /home/user/service
+#        command -option 
         echo "initalising remount.."
         echo "umounting existing NFS mounts.."
         umount -f -l $MNTPNT1
@@ -59,9 +62,9 @@ else
     if (grep -qs $MNTPNT1 /proc/mounts && grep -qs $MNTPNT2 /proc/mounts && grep -qs $MNTPNT3 /proc/mounts ); then
         echo "mountpoint $MNTPNT, $MNTPNT2 or $MNTPNT3 is not mounted: ✗"
         echo "Trying to fix.."
-        echo "stopping service"
-        cd /home/emby/
-        docker-compose down
+#        echo "stopping service.."
+#        cd /home/user/service
+#        command -option 
         echo "umounting existing NFS mounts"
         umount -f -l $MNTPNT1
         umount -f -l $MNTPNT2
@@ -84,9 +87,9 @@ else
     else
         echo "mountpoint $MNTPNT, $MNTPNT2 or $MNTPNT3 is not mounted: ✗"
         echo "Trying to fix.."
-        echo "stopping service"
-        cd /home/emby/
-        docker-compose down
+#        echo "stopping service.."
+#        cd /home/user/service
+#        command -option 
         echo "initalising remount.."
 #        echo "cleanup mount points.."
 #        rm -rf $MNTPNT1/*
