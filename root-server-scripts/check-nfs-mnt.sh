@@ -6,11 +6,11 @@
 ###############################################
 
 #setup environment variables
-HOST=server.domain.com        ## change domain
+HOST=lemuenet.derlemue.com
 PORT=2049
 PNAME=nfs
-MNTPNT=/mnt/share             ## change mnt point          
-NFSSHARE=/volume1/share       ## change nfs share
+MNTPNT=/mnt/lemuenet
+NFSSHARE=/volume1/svr-bak
 
 clear
 echo "checking if port $PORT ($PNAME) is available at host $HOST"
@@ -51,7 +51,7 @@ else
         rm -rf $MNTPNT/*
         echo "cleanup successfull ✓"
         echo "remounting NFS mount.."
-        mount -t nfs $MNTPNT:$NFSSHARE $MNTPNT
+        mount -t nfs $HOST:$NFSSHARE $MNTPNT
         sleep 1
         echo "script finished  ✓"
         sleep 5
@@ -63,7 +63,7 @@ else
         rm -rf $MNTPNT/*
         echo "cleanup successfull ✓"
         echo "remounting NFS mount.."
-        mount -t nfs $MNTPNT:$NFSSHARE $MNTPNT
+        mount -t nfs $HOST:$NFSSHARE $MNTPNT
         sleep 1
         echo "script finished  ✓"
         sleep 5
