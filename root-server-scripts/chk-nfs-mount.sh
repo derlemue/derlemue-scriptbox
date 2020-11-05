@@ -30,9 +30,9 @@ if nc -z $HOST $PORT 2>/dev/null; then
         echo "umounting existing NFS mounts.."
         umount -f $MNTPNT
         echo "NFS mounts down ✓"
-        echo "cleanup mount point.."
-        rm -rf $MNTPNT/*
-        echo "cleanup successfull ✓"
+#        echo "cleanup mount point.."
+#        rm -rf $MNTPNT/*
+#        echo "cleanup successfull ✓"
         echo "remounting NFS mount.."
         mount -t nfs $HOST:"$NFSSHARE" $MNTPNT
         sleep 1
@@ -47,9 +47,9 @@ else
         echo "umounting existing NFS mounts.."
         umount -f $MNTPNT
         echo "NFS mounts down.. ✓"
-        echo "cleanup mount point.."
-        rm -rf $MNTPNT/*
-        echo "cleanup successfull ✓"
+ #       echo "cleanup mount point.."
+ #       rm -rf $MNTPNT/*
+ #       echo "cleanup successfull ✓"
         echo "remounting NFS mount.."
         mount -t nfs $HOST:"$NFSSHARE" $MNTPNT
         sleep 1
@@ -59,9 +59,9 @@ else
         echo "mountpoint $MNTPNT is not mounted: ✗"
         echo "Trying to fix.."
         echo "initalising remount.."
-        echo "cleanup mount point.."
-        rm -rf $MNTPNT/*
-        echo "cleanup successfull ✓"
+  #      echo "cleanup mount point.."
+  #      rm -rf $MNTPNT/*
+  #      echo "cleanup successfull ✓"
         echo "remounting NFS mount.."
         mount -t nfs $HOST:"$NFSSHARE" $MNTPNT
         sleep 1
