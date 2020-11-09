@@ -4,14 +4,14 @@
 //
 //	UtilApp | Google App Scripts for On Call Service Mail Notification
 //	------------------------------------------------------------------
-//	|- UtilApp-UtilOnCall 
+//	|- UtilApp-Call 
 //	|- gets vars, parses and sends Email from given Google Sheet
 //
 /////////////////////////////////////////////////////////////////////////////////////
 //
 //	repository folder and files tree:
 //
-//	derlemue/UtilApp-UtilOnCall
+//	derlemue/UtilApp-Call
 //	|-- .gitignore
 //	|-- LICENSE
 //	|-- README.md
