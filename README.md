@@ -5,7 +5,7 @@
 //  derlemue-scriptbox - various useful scripts for public use (feedback welcomed ;-)
 //  ---------------------------------------------------------------------------------
 //  /derlemue/derlemue-scriptbox
-//  |- /derlemue/UtilApp-UtilOnCall
+//  |- /derlemue/UtilApp-Call
 //  |- /root-server-scripts 
 //
 /////////////////////////////////////////////////////////////////////////////////////
@@ -16,7 +16,7 @@
 //  |-- .gitignore
 //  |-- LICENSE
 //  |-- README.md
-//  |- /derlemue/UtilApp-UtilOnCall
+//  |- /derlemue/UtilApp-Call
 //  |- |- .gitignore
 //  |- |- LICENSE
 //  |- |- README.md
