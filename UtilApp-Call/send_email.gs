@@ -99,7 +99,7 @@
 				email_draft.vOtherService = row[vOtherService];
 				email_draft.vInfoSpread = row[vInfoSpread];
 				email_draft.vName = vNameTemp
-                email_draft.vDuration = calcTime()
+				email_draft.vDuration = calcTime()
   
 /// get variables for Email subject, assemble Email and send by alias
 				var vInfoSpreadTemp = row[vInfoSpread];
