@@ -23,12 +23,13 @@
 //  |- |- send_email.gs
 //  |- |- email_text.html
 //  |- /root-server-scripts
-//  |- |- cert-update.sh
-//  |- |- chk-nfs-mount.sh
-//  |- |- chk-nfs-mount_manual.sh
-//  |- |- chk-nfs-mount_multi.sh
 //  |- |- crontab-examples.txt
-//  |- |- nginx-reverse-proxy-domain.com.conf
+//  |- |- nfs-check-mount-manual.sh
+//  |- |- nfs-check-mount-multi.sh
+//  |- |- nfs-check-mount.sh
+//  |- |- proxmox-LE-cert-update.sh
+//  |- |- proxmox-nginx-reverse-proxy-domain.com.conf
+//  |- |- proxmox-webservices-startup.sh
 //
 /////////////////////////////////////////////////////////////////////////////////////
 //
