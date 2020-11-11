@@ -28,6 +28,7 @@
 //  |- |- chk-nfs-mount_manual.sh
 //  |- |- chk-nfs-mount_multi.sh
 //  |- |- crontab-examples.txt
+//  |- |- nginx-reverse-proxy-domain.com.conf
 //
 /////////////////////////////////////////////////////////////////////////////////////
 //
