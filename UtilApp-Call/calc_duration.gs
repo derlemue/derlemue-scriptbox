@@ -4,7 +4,7 @@
 //
 /////////////////////////////////////////////////////////////////////***
 //
-// Calculate Duration of two times from given Google Sheet
+// Calculate duration out of two timestamps from given Google Sheet
 //
 //
 // by T. Ledermueller (derlemue.com) | License: GNU GPL-3.0
