@@ -4,8 +4,7 @@
 //
 /////////////////////////////////////////////////////////////////////***
 //
-// Send Emails on Google Form Submit, get content, parse and send
-// to given Address List
+// Calculate Duration of two times from given Google Sheet
 //
 //
 // by T. Ledermueller (derlemue.com) | License: GNU GPL-3.0
