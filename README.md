@@ -29,6 +29,7 @@
 //  |- |- nfs-check-mount.sh
 //  |- |- proxmox-LE-cert-update.sh
 //  |- |- proxmox-nginx-reverse-proxy-domain.com.conf
+//  |- |- proxmox-vzdump.conf
 //  |- |- proxmox-webservices-startup.sh
 //
 /////////////////////////////////////////////////////////////////////////////////////
