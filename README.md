@@ -30,6 +30,7 @@
 //  |- |- proxmox-99-hetzner.conf
 //  |- |- proxmox-LE-cert-update.sh
 //  |- |- proxmox-nginx-reverse-proxy-domain.com.conf
+//  |- |- proxmox-ssd-host-vm-100.conf
 //  |- |- proxmox-vzdump.conf
 //  |- |- proxmox-webservices-startup.sh
 //
