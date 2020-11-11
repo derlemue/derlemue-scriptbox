@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////////////////////////***
 //
-// UtilApp-Call | send_email.gs | RC1
+// UtilApp-Call | send_email.gs | RC2
 //
 /////////////////////////////////////////////////////////////////////***
 //
@@ -16,18 +16,18 @@
 ///	Trigger to fire when new row is added to Google Sheet
 ///
 	function onFormSubmit(e){
-		Logger.log("[METHOD] onFormSubmit");
-		emailSenderBR();
+	Logger.log("[METHOD] onFormSubmit");
+	emailSenderBR();
 	}
-///
+
 ///	Script to parse Email from Sheet and send by alias
 ///
-	function emailSenderBR(){
+	function emailSenderCall(){
 
 /// set variables (shortcuts for Google App Script Classes)
 		var email_draft = HtmlService.createTemplateFromFile("email_text");
-		var ws_input = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("///ADD Input SHEET///");
-		var ws_mail = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("///ADD Mailaddress SHEET///");
+		var ws_input = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Input");
+		var ws_mail = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Mail_Util");
 
 /// set variables (define sources on Google Sheet)  
 /// set range from column A-Q and set row from "last"-"last"  
@@ -57,7 +57,7 @@
 		var vComment = 15;
 		var vInfoSpread = 16;
   
-/// set variables (link name and cloumn in Google Sheet "Mailaddress")
+/// set variables (link name and cloumn in Google Sheet "Mail_Util")
 		var vAddr = 1;
 		var vName = 0;
 
@@ -76,7 +76,7 @@
 		Logger.log("Script Finished");
 
 /// Parse Emails from Google Sheet  
-/// get Email address and name from Google Sheet "Mailaddress", repeat for each row)
+/// get Email address and name from Google Sheet "Mail_Util", repeat for each row)
 		data_mail.forEach(function get1(row){  
 			var vAdd = row[vAddr];
 			var vNameTemp = row[vName];
@@ -99,6 +99,7 @@
 				email_draft.vOtherService = row[vOtherService];
 				email_draft.vInfoSpread = row[vInfoSpread];
 				email_draft.vName = vNameTemp
+                email_draft.vDuration = calcTime()
   
 /// get variables for Email subject, assemble Email and send by alias
 				var vInfoSpreadTemp = row[vInfoSpread];

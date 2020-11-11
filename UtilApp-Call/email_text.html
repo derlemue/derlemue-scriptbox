@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- ---------------------------------------------- -->
-<!-- | UtilApp-Call       | email_text.html | RC1 | -->
+<!-- | UtilApp-Call | email_text.html       | RC2 | -->
 <!-- ---------------------------------------------- -->
 <!-- | by T. Ledermüller (derlemue.com)           | -->
 <!-- | Lisence: GNU GPL-3.0                       | -->
@@ -11,11 +11,12 @@
     		<base target="_top">
   	</head>
   	<body>
-		<p><b>Infomail der Rufbereitschaft</b></p>
-    		<p>Am <b><?= vDate ?></b> wurde der <b>Rufbereitschaft</b> eine Störung in <b>Gebäude <?= vBuilding ?></b> gemeldet.<br> Die Meldungsbearbeitung durch <b><?= vReporter ?></b> erfolgte von <b><?= vTime1 ?> Uhr</b> bis <b><?= vTime2 ?> Uhr</b>.</p>
+		<p><b>Infomail der Rufbereitschaft Utilities</b></p>
+    		<p>Am <b><?= vDate ?></b> wurde der <b>Rufbereitschaft Utilities</b> eine Störung in <b>Gebäude <?= vBuilding ?></b> gemeldet.<br> Die Meldungsbearbeitung durch <b><?= vReporter ?></b> erfolgte von <b><?= vTime1 ?> Uhr</b> bis <b><?= vTime2 ?> Uhr</b>.</p>
             	<p><b><u>Weitere Informationen zum Einsatz:</u></b></p>
     		<table>
             		<tr><td><b>Einsatzart: </b></td><td><?= vCase?> </td></tr>
+                    <tr><td><b>Einsatzdauer: </b></td><td><?= vDuration?> </td></tr>
             		<tr><td><b>Betroffene Anlage: </b></td><td><?= vMedium ?> <?= vMachine ?> </td></tr>
             		<tr><td><b>Störung: </b></td><td><?= vError ?> </td></tr>
     			<tr><td><b>Ursache: </b></td><td><?= vCause ?> </td></tr> 
@@ -24,6 +25,6 @@
     			<tr><td><b>weitere beteiligte Bereitschaft: </b></td><td><?= vOtherService ?> </td></tr>
     			<tr><td><b>Info-Verteiler: </b></td><td><?= vInfoSpread ?> </td></tr>
             	</table>
-    		<p>Mit freundlichen Grüßen, <br><br><b>ihre Rufbereitschaft</b><br><?= vReporter ?></p>
+    		<p>Mit freundlichen Grüßen, <br><br><b>WebApp Utilities</b><br><?= vReporter ?></p>
 	</body>
 </html>
