@@ -27,6 +27,7 @@
 //  |- |- nfs-check-mount-manual.sh
 //  |- |- nfs-check-mount-multi.sh
 //  |- |- nfs-check-mount.sh
+//  |- |- proxmox-99-hetzner.conf
 //  |- |- proxmox-LE-cert-update.sh
 //  |- |- proxmox-nginx-reverse-proxy-domain.com.conf
 //  |- |- proxmox-vzdump.conf
