@@ -48,6 +48,7 @@
         		var vTime2 = Utilities.formatDate(new Date(vTime2F), "Europe/Berlin", "HH:mm");
 			Logger.log(vTime1)
 			Logger.log(vTime2)
+			
 /// split times in hours and minutes
 			var h1 = vTime1.split(":");      
 			var h2 = vTime2.split(":");
