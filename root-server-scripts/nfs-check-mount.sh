@@ -37,7 +37,8 @@ if nc -z $HOST $PORT 2>/dev/null; then
         mount -t nfs $HOST:"$NFSSHARE" $MNTPNT
         sleep 1
         echo "script finished  ✓"
-        sleep 5
+        sleep 15
+        killall mount -w
     fi
 else
     echo "$HOST status: ✗ (offline)"
@@ -54,7 +55,8 @@ else
         mount -t nfs $HOST:"$NFSSHARE" $MNTPNT
         sleep 1
         echo "script finished  ✓"
-        sleep 5
+        sleep 15
+        killall mount -w
     else
         echo "mountpoint $MNTPNT is not mounted: ✗"
         echo "Trying to fix.."
@@ -66,6 +68,7 @@ else
         mount -t nfs $HOST:"$NFSSHARE" $MNTPNT
         sleep 1
         echo "script finished  ✓"
-        sleep 5
+        sleep 15
+        killall mount -w
    fi
 fi
